@@ -1,58 +1,122 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aydın Eğitmen | Software Engineer OS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Fira Code', monospace; }
+        .typing-effect {
+            overflow: hidden;
+            border-right: .15em solid #10b981;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #10b981; } }
+        .terminal-window { box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-300 min-h-screen p-4 md:p-12">
 
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:0EA5E9&height=200&section=header&text=Aydın%20Eğitmen&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Software%20Engineer%20%7C%20Full-Stack%20Developer%20%7C%202025%20Graduate&descAlignY=60" width="100%"/>
+    <div class="max-w-5xl mx-auto terminal-window border border-slate-700 rounded-lg overflow-hidden shadow-2xl">
+        
+        <div class="bg-[#1e293b] px-4 py-3 flex items-center justify-between border-b border-slate-700">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+            </div>
+            <div class="text-xs text-slate-400 font-mono italic">aydin@dev-machine: ~/portfolio</div>
+            <div class="w-10"></div>
+        </div>
 
-<!-- Typing Animation -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=700&lines=Python+Developer;Node.js+%7C+React+%7C+MongoDB;Full-Stack+Web+Development;Clean+Code+%7C+Scalable+Architecture" alt="Typing SVG" />
+        <div class="bg-[#0f172a]/95 p-6 md:p-10 space-y-10">
+            
+            <section>
+                <div class="text-emerald-500 mb-2 font-bold uppercase tracking-widest text-sm">[ SYSTEM INITIALIZED ]</div>
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 typing-effect">
+                    Aydın Eğitmen
+                </h1>
+                <p class="text-lg text-slate-400 leading-relaxed">
+                    <span class="text-blue-400">Software Engineer</span> based in EMU. 
+                    Specializing in <span class="text-emerald-400">Scalable Systems</span> & <span class="text-emerald-400">Clean Architecture</span>.
+                </p>
+            </section>
 
-<br/><br/>
+            <section>
+                <div class="flex items-center space-x-2 text-amber-400 mb-4">
+                    <span>$</span> <span class="text-slate-100 uppercase font-bold">cat education.json</span>
+                </div>
+                <div class="bg-[#1e293b] p-5 rounded-md border-l-4 border-amber-500 overflow-x-auto">
+                    <pre class="text-sm md:text-base"><code>{
+  <span class="text-purple-400">"university"</span>: <span class="text-emerald-400">"Eastern Mediterranean University"</span>,
+  <span class="text-purple-400">"degree"</span>: <span class="text-emerald-400">"BSc Software Engineering"</span>,
+  <span class="text-purple-400">"graduation"</span>: <span class="text-emerald-400">2025</span>,
+  <span class="text-purple-400">"status"</span>: <span class="text-emerald-400">"Ready for Production"</span>
+}</code></pre>
+                </div>
+            </section>
 
-<img src="https://komarev.com/ghpvc/?username=aydinegitmen&label=Profile%20Views&color=6366f1&style=for-the-badge" alt="Profile Views" />
+            <section>
+                <div class="flex items-center space-x-2 text-blue-400 mb-6">
+                    <span>$</span> <span class="text-slate-100 uppercase font-bold">ls --skills</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border border-slate-800 p-4 rounded hover:bg-slate-800/50 transition duration-300">
+                        <h3 class="text-white font-bold mb-3 flex items-center gap-2">
+                            <span class="text-emerald-500">>></span> Backend
+                        </h3>
+                        <ul class="text-sm space-y-1 opacity-80">
+                            <li>• Python / Node.js</li>
+                            <li>• MongoDB / PostgreSQL</li>
+                            <li>• RESTful APIs</li>
+                        </ul>
+                    </div>
+                    <div class="border border-slate-800 p-4 rounded hover:bg-slate-800/50 transition duration-300">
+                        <h3 class="text-white font-bold mb-3 flex items-center gap-2">
+                            <span class="text-emerald-500">>></span> Frontend
+                        </h3>
+                        <ul class="text-sm space-y-1 opacity-80">
+                            <li>• React.js / Hooks</li>
+                            <li>• Tailwind CSS</li>
+                            <li>• Responsive UI/UX</li>
+                        </ul>
+                    </div>
+                    <div class="border border-slate-800 p-4 rounded hover:bg-slate-800/50 transition duration-300">
+                        <h3 class="text-white font-bold mb-3 flex items-center gap-2">
+                            <span class="text-emerald-500">>></span> DevOps
+                        </h3>
+                        <ul class="text-sm space-y-1 opacity-80">
+                            <li>• Git / Version Control</li>
+                            <li>• Clean Architecture</li>
+                            <li>• Docker Basics</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-<br/><br/>
+            <section class="pt-10 border-t border-slate-800">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex space-x-6 text-sm">
+                        <a href="mailto:contact@aydinegitmen.com" class="hover:text-emerald-400 transition underline decoration-emerald-900 underline-offset-4">email_me()</a>
+                        <a href="https://github.com/aydinegitmen" class="hover:text-emerald-400 transition underline decoration-emerald-900 underline-offset-4">github_repo</a>
+                        <a href="#" class="hover:text-emerald-400 transition underline decoration-emerald-900 underline-offset-4">linkedin_profile</a>
+                    </div>
+                    <div class="text-xs text-slate-500 font-mono">
+                        Build_v2.0.26 // Optimized for Chrome, Safari & Firefox
+                    </div>
+                </div>
+            </section>
 
-<a href="mailto:yourmail@example.com">
-  <img src="https://img.shields.io/badge/Email-Contact%20Me-6366F1?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
+        </div>
+    </div>
 
-<a href="https://www.linkedin.com/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
+    <div class="text-center mt-8 text-slate-600 text-xs uppercase tracking-tighter">
+        &copy; 2026 Aydin Egitmen - Localhost Deployment
+    </div>
 
-</div>
-
----
-
-<!-- Cool Divider -->
-<img src="https://user-images.githubusercontent.com/74038190/212284087-9c77b98d-9d7f-4e1c-b9c5-6f0dcb7e3f6f.gif" width="100%"/>
-
-<div align="center">
-
-<h2>👨‍💻 About Me</h2>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3500&pause=1000&color=0EA5E9&center=true&vCenter=true&width=650&lines=Building+Scalable+Web+Applications;Focused+on+Clean+%26+Maintainable+Code;Full-Stack+Developer+%7C+Backend+Enthusiast" alt="Typing SVG" />
-
-</div>
-
-<br/>
-
-```python
-class AydinEgitmen:
-    def __init__(self):
-        self.role = "Software Engineer"
-        self.university = "Eastern Mediterranean University"
-        self.graduation = 2025
-
-        self.languages = ["Python", "JavaScript"]
-        self.frameworks = ["Node.js", "React"]
-        self.database = "MongoDB"
-
-        self.mindset = [
-            "Clean Code",
-            "Scalable Architecture",
-            "Continuous Learning"
-        ]
-
-    def current_status(self):
-        return "Open to remote & international opportunities 🚀"
+</body>
+</html>
